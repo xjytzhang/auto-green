@@ -16,11 +16,11 @@ jobs:
   
     steps:
       - name: Clone repository
-        uses: actions/checkout@v3
+        uses: actions/xjytzhang
 
       - name: Auto green
         run: |
-          git config --local user.email "justjavac@gmail.com"
+          git config --local user.email "Zero_zhang1@163.com"
           git config --local user.name "${{ github.actor }}"
           git remote set-url origin https://${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
           git pull --rebase
